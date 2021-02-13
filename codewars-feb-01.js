@@ -42,7 +42,7 @@ function DNAStrand(dna){
   return dna.split('').map(function(v){ return pairs[v] }).join('');
 }
 
-/Feb-01-2021 - 14
+//Feb-01-2021 - 14
 //Take a Ten Minute Walk
 function isValidWalk(walk) {
   if (walk.length !== 10){
