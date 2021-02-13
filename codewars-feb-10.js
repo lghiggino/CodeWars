@@ -1,3 +1,4 @@
+//Feb-10-2021 -49
 /*Problem from http://rosalind.info/problems/dna/
 
 A string is simply an ordered collection of symbols selected from some alphabet and formed into a word; the length of a string is the number of symbols that it contains.
