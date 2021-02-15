@@ -16,7 +16,7 @@ Sample Output - will change to return an object with the letter and the count - 
 function dnaBasesCount(string){
   let reducedBases = string.split("").reduce((obj, item) => {
     if(!obj[item]){
-      obj[item] =0
+      obj[item] = 0
     }
       obj[item]++
       return obj
