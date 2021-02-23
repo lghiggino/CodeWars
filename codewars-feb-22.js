@@ -25,3 +25,20 @@ function trouble(x, t){
 
 
 const stringy = x => ''.padStart(x,'10');
+
+
+function nextIdBest(ids){
+  var x = 0;
+  while (ids.includes(x)) x++;
+  return x;
+}
+
+function toCsvText(array) {
+   return array.join('\n');
+}
+
+
+function divCon(x){
+  return x.reduce((acc, cur) => typeof cur === 'number'? acc + cur : acc - Number(cur),0)
+}
+
