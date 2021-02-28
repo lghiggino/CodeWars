@@ -79,3 +79,131 @@ function openOrSeniorBest(data){
 function reverseWords(str) {
   return str.split(" ").map(el => el.split("").reverse().join("")).join(" ")
 }
+
+
+//Maximum Multiple
+function maxMultiple(divisor, bound){
+  for (let i = bound; i >= divisor; i--){
+    if (i % divisor === 0) return i
+  }
+}
+
+
+function maxMultipleBest(divisor, bound){
+  return bound-bound%divisor
+}
+
+//Remove anchor from URL
+function removeUrlAnchor(url){
+  return url.split("#")[0]
+} 
+
+//Find the capitals
+var capitals = function (word) {
+  let res = []
+  word.split("").forEach( (el,idx) => {
+    if (el === el.toUpperCase()){
+      res.push(idx)
+    }
+  })
+  return res
+};
+
+//Alternate capitalization
+function capitalize(s){
+  let output1 = ""
+  let output2 = ""
+  for (let i = 0; i < s.length; i++){
+    if (i % 2 === 0){
+      output1 += s[i].toUpperCase()
+      output2 += s[i].toLowerCase()
+    }else{
+      output1 += s[i].toLowerCase()
+      output2 += s[i].toUpperCase()
+    }
+  }
+  return [output1, output2];
+};
+
+function capitalizeBest(s){
+  const odd = s.split("").map((l, i) => i % 2 !== 0 ? l.toUpperCase() : l).join("");
+  const even = s.split("").map((l, i) => i % 2 === 0 ? l.toUpperCase() : l).join("");
+  return [even, odd];
+};
+
+//
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
