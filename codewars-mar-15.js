@@ -26,3 +26,33 @@ function anagrams(word, array) {
 }
 
   anagrams('abba', ['aabb', 'abcd', 'bbaa', 'dada'])
+
+  //Split Strings
+  function solution(str){
+    let res = [] 
+    if(str.length % 2 !== 0){
+       str = str+"_"
+       for(let i = 0; i < str.length; i += 2){
+         //console.log(str.slice(i,i+2))
+         res.push(str.slice(i,i+2))
+       }
+     }else{
+       for(let i = 0; i < str.length; i += 2){
+         res.push(str.slice(i,i+2))
+       }
+     }
+    return res
+  }
+
+  function solutionBest(str){
+    var i = 0;
+    var result = new Array();
+    if (str.length % 2 !== 0) {
+      str = str + '_';
+    }
+    while (i < str.length) {
+        result.push(str[i] + str[i+1]);
+        i += 2;
+      }
+    return result;
+  }
