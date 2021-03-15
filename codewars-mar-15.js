@@ -56,3 +56,10 @@ function anagrams(word, array) {
       }
     return result;
   }
+
+  //nth fibonacci
+  const nthFibo = (n) => {
+    if (n == 1) return 0
+    if (n <= 3) return 1
+    return nthFibo(n-1) + nthFibo(n-2)
+  }
