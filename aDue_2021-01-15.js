@@ -1,4 +1,4 @@
-function takesTwoNumbersDivideAndRoundDown(numA, numB){
+cd.function takesTwoNumbersDivideAndRoundDown(numA, numB){
     console.log(Math.floor(numA / numB));
 }
 
